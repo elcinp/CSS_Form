@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS ile Form</title>
+    <style>
+    input[type=text],select {
+        width: 95%;
+        padding: 12px 20px;
+        margin: 8px;
+        display: inline-block;
+        border: 1px solid#ccc;
+        border-radius: 6px;
+        box-sizing: border-box;
+    }    
+
+    input[type=submit] {
+        width: 95%;
+        background-color: #4CAF50;
+        color: white;
+        padding: 14px 20px;
+        margin:8px 10px;
+        border: none;
+        border-radius: 6px;
+        cursor:pointer;
+    }
+    
+    input[type=submit]:hover {
+        background-color: #45a049;
+
+    }
+    
+    div {
+        border-radius: 5px;
+        background-color: yellow;
+        width: 50%;
+    }
+    label{
+        padding: 10px;
+    }
+    
+
+    
+
+
+
+
+
+
+    </style>
+
+</head>
+
+<body>
+
+<h3>CSS ile Form</h3>
+    
+<div>
+    <form action="result.html">
+
+        <label for="ad">Adınız</label><br>
+        <input type="text" name="Ad" id="ad" placeholder="Adınız..."><br>
+
+        <label for="soyad">Soyadınız</label><br>
+        <input type="text" name="soyad" id="soyad" placeholder="Soyadınız.."><br>
+
+        <label for="Meslek">Mesleğiniz</label><br>
+        <select name="Meslek" id="Meslek">
+            <option value="Yazılımcı">Yazılımcı</option>
+            <option value="WebTasarım">Web Tasarım</option>
+            <option value="grafik">Grafik</option>
+        </select>
+    <br><br>
+
+    <input type="submit" value="Submit"> 
+           
+    </form>
+</div>
+
+
+
+
+</body>
+</html>
